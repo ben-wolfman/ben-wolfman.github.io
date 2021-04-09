@@ -30,7 +30,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {
     myIndex = 1;
-    window.location.reload();
+    document.location.reload(true);
   }
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, parseInt(x[myIndex-1].getAttribute('delay'))); // Change image every 2 seconds

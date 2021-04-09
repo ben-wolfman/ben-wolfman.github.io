@@ -13,9 +13,9 @@
 
 <body>
 
-<img class="mySlides" id="4000" src="img1.jpeg" width="3840" height="2160">
-<img class="mySlides" id="1000" src="img2.jpeg" width="3840" height="2160">
-<img class="mySlides" id="10000" src="img3.jpeg" width="3840" height="2160">
+<img class="mySlides" id=4000 src="img1.jpeg" width="3840" height="2160">
+<img class="mySlides" id=1000 src="img2.jpeg" width="3840" height="2160">
+<img class="mySlides" id=10000 src="img3.jpeg" width="3840" height="2160">
 
 <script>
 var myIndex = 0;
@@ -30,7 +30,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, x[myIndex-1].getAttribute('id')); // Change image every 2 seconds
+  setTimeout(carousel, parseInt(x[myIndex-1].getAttribute('id'))); // Change image every 2 seconds
 }
 </script>
 
